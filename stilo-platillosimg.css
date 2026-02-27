@@ -1,0 +1,44 @@
+/* =======================================
+   POPUP MENU (adaptado a .menu-card)
+======================================= */
+
+/* La imagen dentro de la card */
+.menu-card .image-card img{
+  cursor: pointer;
+}
+
+/* Popup */
+.popup-image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.9);
+  display: none;
+  z-index: 9999;
+}
+
+/* Botón cerrar */
+.popup-image span{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Imagen grande */
+.popup-image img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(900px, 92%);
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 4px solid #fff;
+}
